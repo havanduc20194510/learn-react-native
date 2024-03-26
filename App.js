@@ -1,22 +1,11 @@
-import { useState } from "react";
-import {
-  Button,
-  Image,
-  ImageBackground,
-  Modal,
-  Pressable,
-  ScrollView,
-  StatusBar,
-  Text,
-  View,
-} from "react-native";
-const logoImg = require("./assets/adaptive-icon.png");
+import { ActivityIndicator, View } from "react-native";
 
 export default function App() {
-  const [isModalVisible, setIsModalVisible] = useState(false);
   return (
     <View style={{ flex: 1, backgroundColor: "plum", padding: 60 }}>
-     <StatusBar backgroundColor="lightgreen" barStyle="light-content"/>
+      <ActivityIndicator />
+      <ActivityIndicator size="small" color="midnightblue" />
+      <ActivityIndicator size="large" color="midnightblue" animating={true} />
     </View>
   );
 }
